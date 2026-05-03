@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&family=Chakra+Petch:wght@300;400;500;600;700&family=Unica+One&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -18,22 +18,22 @@
 
   <!-- ===== TOP ===== -->
   <section class="hero">
-    <h1 class="hero-title">Hello, World! This is <span class="accent">Mochi</span>.</h1>
+    <h1 class="hero-title">Hello, World!<br><span class="hero-sub">This is <span class="accent">Mochi</span>.</span></h1>
 
     <div class="planet-hub">
       <img src="planet.png" alt="Planet" class="hub-planet">
+
+      <svg class="hub-lines" viewBox="0 0 600 400" aria-hidden="true">
+        <line x1="260" y1="160" x2="100" y2="75" />
+        <line x1="350" y1="177" x2="500" y2="135" />
+        <line x1="260" y1="240" x2="90"  y2="340" />
+        <line x1="340" y1="240" x2="500" y2="340" />
+      </svg>
 
       <a href="#profile" class="hub-btn hub-btn-profile">Mochi's profile</a>
       <a href="#favorite" class="hub-btn hub-btn-logs">Mochi's favorites</a>
       <a href="#works" class="hub-btn hub-btn-works">Mochi's works</a>
       <a href="#logs" class="hub-btn hub-btn-favorites">Mochi's logs</a>
-
-      <svg class="hub-lines" viewBox="0 0 600 400" aria-hidden="true">
-        <line x1="260" y1="160" x2="100" y2="75" />
-        <line x1="340" y1="180" x2="500" y2="135" />
-        <line x1="260" y1="240" x2="90"  y2="340" />
-        <line x1="340" y1="240" x2="500" y2="340" />
-      </svg>
     </div>
   </section>
 
@@ -42,21 +42,21 @@
   <!-- PROFILE: 惑星の右上をアップ / 枠左・テキスト右 -->
   <div id="profile" class="modal">
     <a href="#" class="modal-close">&times;</a>
-    <div class="modal-inner layout-left">
-      <div class="planet-frame frame-top-right">
-        <img src="planet.png" alt="Planet">
+    <div class="modal-inner layout-left modal-center">
+      <div class="planet-frame">
+        <img src="right-top.png" alt="Planet">
       </div>
       <div class="modal-text">
         <h2>Mochi's profile</h2>
         <div class="profile-details">
           <p class="profile-name">Mochi / Youmi Nagase</p>
-          <p>DHU 26</p>
+          <p>Digital Hollywood University</p>
           <p>Born: 02/23/2008 in Tokyo</p>
           <p>MBTI: INTP-AS</p>
           <p class="contact">
-            CONTACT:
-            <a href="#">Instagram</a>
-            <a href="#">GitHub</a>
+            Contact me:
+            <a href="https://instagram.com/youmi.ngs">@youmi.ngs(Instagram)</a>
+            <a href="https://github.com/youmi-ngs">@youmi-ngs(GitHub)</a>
           </p>
         </div>
       </div>
@@ -67,25 +67,45 @@
   <div id="favorite" class="modal">
     <a href="#" class="modal-close">&times;</a>
     <div class="modal-inner layout-left">
-      <div class="planet-frame frame-bottom-right">
-        <img src="planet.png" alt="Planet">
+      <div class="planet-frame">
+        <img src="right-bottom.png" alt="Planet">
       </div>
       <div class="modal-text">
         <h2>Mochi's favorite</h2>
         <div class="favorite-list">
+
           <div class="favorite-item">
             <h3>Design</h3>
-            <h3>Photography</h3>
-            <p>中学の頃出会ったドラマの影響で写真やデザインに興味を持つ。写真を撮るのも好き。</p>
+            <p>I want to be a friend with Illustrator!</p>
           </div>
+
+          <div class="favorite-item">
+            <h3>Programming</h3>
+            <p>Been learning Swift since elementary school.</p>
+          </div>
+
+          <div class="favorite-item">
+            <h3>Photography</h3>
+            <p>Started photography inspired by a TV drama I watched in middle school.</p>
+          </div>
+
           <div class="favorite-item">
             <h3>Disney</h3>
-            <p>名前はベイマックスのヒロのネコ「モチ」から付けた。デイジーとヒロとオルメルをこよなく愛している。</p>
+            <p>
+              My nickname comes from "Mochi", Hiro's cat in Big Hero 6. <br>
+              I love Daisy, Hiro and 'Olu Mel.<br>
+              I also like to take photos at Disney Parks.
+            </p>
           </div>
+
           <div class="favorite-item">
             <h3>Valorant</h3>
-            <p>最近のマイブーム。</p>
+            <p>
+            My current obsession.<br>
+            My favorite agents are Waylay and Astra.
+            </p>
           </div>
+          
         </div>
       </div>
     </div>
@@ -99,50 +119,50 @@
         <h2>Mochi's logs</h2>
         <div class="timeline">
           <div class="timeline-item">
-            <span class="timeline-date">20XX.11~</span>
+            <span class="timeline-date">2018.11 - 2020.3</span>
             <div class="timeline-content">
               <h3>Tech Kids School</h3>
               <p>Scratch / Swift</p>
             </div>
           </div>
           <div class="timeline-item">
-            <span class="timeline-date">20XX.4~20XX.7</span>
+            <span class="timeline-date">2020.4 - 2022.7</span>
             <div class="timeline-content">
               <h3>Life Is Tech School</h3>
-              <p>Swift・iPhoneコース</p>
+              <p>Swift・iPhone Course</p>
             </div>
           </div>
           <div class="timeline-item">
-            <span class="timeline-date">20XX.3</span>
+            <span class="timeline-date">2021 summer</span>
             <div class="timeline-content">
               <h3>Life Is Tech Camp</h3>
-              <p>デザイナーコース (Online)</p>
+              <p>Designer Course (Online)</p>
             </div>
           </div>
           <div class="timeline-item">
-            <span class="timeline-date">20XX.3</span>
+            <span class="timeline-date">2022.3</span>
             <div class="timeline-content">
               <h3>Life Is Tech Camp</h3>
-              <p>Swift・iPhoneコース</p>
+              <p>Swift・iPhone Course</p>
             </div>
           </div>
           <div class="timeline-item">
-            <span class="timeline-date">2023.4~2026.3</span>
+            <span class="timeline-date">2023.4 - 2026.3</span>
             <div class="timeline-content">
               <h3>Started Photography</h3>
-              <p>写真部</p>
+              <p>Joined Photography Club of High school</p>
             </div>
           </div>
           <div class="timeline-item">
             <span class="timeline-date">2026.4</span>
             <div class="timeline-content">
-              <h3>DHU 入学</h3>
+              <h3>Enrolled in Digital Hollywood University</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="planet-frame frame-top-left">
-        <img src="planet.png" alt="Planet">
+      <div class="planet-frame">
+        <img src="left-top.png" alt="Planet">
       </div>
     </div>
   </div>
@@ -150,27 +170,25 @@
   <!-- WORKS: 惑星の左下をアップ / テキスト左(右揃え)・枠右 -->
   <div id="works" class="modal">
     <a href="#" class="modal-close">&times;</a>
-    <div class="modal-inner layout-right">
+    <div class="modal-inner layout-right modal-center">
       <div class="modal-text">
         <h2>Mochi's works</h2>
         <ul class="works-list">
-          <li><a href="#">Shaka <span>&rsaquo;</span></a></li>
-          <li><a href="#">Sector Y <span>&rsaquo;</span></a></li>
+          <li>
+            <a href="https://github.com/youmi-ngs/Shaka">Shaka <span>&rsaquo;</span></a>
+            <p class="works-desc">A chill community photo app for shutterbugs</p>
+          </li>
+          <li>
+            <a href="https://youmi.ngs.computer">Sector Y<span>&rsaquo;</span></a>
+            <p class="works-desc">Another my universe</p>
+          </li>
+          <li>
+            <a href="https://youmi.ngs.computer/gallery/main.html">My Photo Gallery<span>&rsaquo;</span></a>
+          </li>
         </ul>
-        <h3 class="photos-heading">Photos</h3>
-        <div class="photo-grid">
-          <div class="photo-cell"></div>
-          <div class="photo-cell"></div>
-          <div class="photo-cell"></div>
-          <div class="photo-cell"></div>
-          <div class="photo-cell"></div>
-          <div class="photo-cell"></div>
-          <div class="photo-cell"></div>
-          <div class="photo-cell"></div>
-        </div>
       </div>
-      <div class="planet-frame frame-bottom-left">
-        <img src="planet.png" alt="Planet">
+      <div class="planet-frame">
+        <img src="left-bottom.png" alt="Planet">
       </div>
     </div>
   </div>
