@@ -238,7 +238,7 @@ a:hover {
 }
 
 .accent {
-  color: #a78bfa;
+  color: #ff6b35;
 }
 
 /* ===== PLANET HUB（惑星 + 線 + ラベル） ===== */
@@ -276,9 +276,9 @@ a:hover {
 }
 
 .hub-btn:hover {
-  color: #a78bfa;
-  border-color: #a78bfa;
-  background: rgba(167, 139, 250, 0.1);
+  color: #ff6b35;
+  border-color: #ff6b35;
+  background: rgba(255, 107, 53, 0.1);
 }
 
 /* メモ通りの配置: 左上=favorites, 右=profile, 左下=works, 右下=logs */
@@ -371,19 +371,19 @@ a:hover {
 }
 
 .modal-text::-webkit-scrollbar-thumb {
-  background: rgba(167, 139, 250, 0.3);
+  background: rgba(255, 107, 53, 0.3);
   border-radius: 2px;
 }
 
 .modal-text::-webkit-scrollbar-thumb:hover {
-  background: rgba(167, 139, 250, 0.6);
+  background: rgba(255, 107, 53, 0.6);
 }
 
 .modal-text h2 {
   font-family: "Unica One", sans-serif;
   font-size: 1.8rem;
   margin-bottom: 25px;
-  color: #a78bfa;
+  color: #ff6b35;
 }
 
 .planet-frame {
@@ -405,7 +405,7 @@ a:hover {
 
 .layout-right .timeline {
   border-left: none;
-  border-right: 2px solid #a78bfa;
+  border-right: 2px solid #ff6b35;
   padding-left: 0;
   padding-right: 27px;
 }
@@ -449,7 +449,7 @@ a:hover {
 
 .contact a {
   margin-right: 15px;
-  color: #a78bfa;
+  color: #ff6b35;
 }
 
 .contact a:hover {
@@ -465,7 +465,7 @@ a:hover {
 
 .favorite-item h3 {
   font-size: 1.1rem;
-  color: #c9b8ff;
+  color: #ff8c5a;
   margin-bottom: 5px;
 }
 
@@ -478,7 +478,7 @@ a:hover {
 .timeline {
   position: relative;
   padding-left: 5px;
-  border-left: 2px solid #a78bfa;
+  border-left: 2px solid #ff6b35;
 }
 
 .timeline-item {
@@ -493,7 +493,7 @@ a:hover {
   top: 8px;
   width: 10px;
   height: 10px;
-  background-color: #a78bfa;
+  background-color: #ff6b35;
   border-radius: 50%;
 }
 
@@ -534,7 +534,7 @@ a:hover {
 }
 
 .works-list a:hover {
-  color: #a78bfa;
+  color: #ff6b35;
   padding-left: 5px;
 }
 
