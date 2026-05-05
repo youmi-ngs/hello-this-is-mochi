@@ -348,6 +348,24 @@ a:hover {
   max-height: 450px;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-right: 20px;
+}
+
+.modal-text::-webkit-scrollbar {
+  width: 4px;
+}
+
+.modal-text::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-text::-webkit-scrollbar-thumb {
+  background: rgba(167, 139, 250, 0.3);
+  border-radius: 2px;
+}
+
+.modal-text::-webkit-scrollbar-thumb:hover {
+  background: rgba(167, 139, 250, 0.6);
 }
 
 .modal-text h2 {
@@ -378,7 +396,7 @@ a:hover {
   border-left: none;
   border-right: 2px solid #a78bfa;
   padding-left: 0;
-  padding-right: 28px;
+  padding-right: 27px;
 }
 
 .layout-right .timeline-item::before {
@@ -390,7 +408,7 @@ a:hover {
 .modal-close {
   position: absolute;
   top: 30px;
-  right: 40px;
+  right: 28px;
   font-size: 2rem;
   color: #888;
   text-decoration: none;
