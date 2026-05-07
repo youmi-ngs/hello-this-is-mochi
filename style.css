@@ -557,6 +557,64 @@ a:hover {
   background: rgba(255, 107, 53, 0.6);
 }
 
+/* ===== FLIP IMAGE ===== */
+.flip-check {
+  display: none;
+}
+
+.flip-frame {
+  position: relative;
+}
+
+.flip-front,
+.flip-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease;
+}
+
+.flip-front {
+  opacity: 1;
+}
+
+.flip-back {
+  opacity: 0;
+  object-fit: cover;
+}
+
+.flip-check:checked ~ .flip-front {
+  opacity: 0;
+}
+
+.flip-check:checked ~ .flip-back {
+  opacity: 1;
+}
+
+.flip-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  transition: background 0.3s;
+}
+
+.flip-btn:hover {
+  background: rgba(255, 107, 53, 0.6);
+}
+
 .modal-text h2 {
   font-family: "Unica One", sans-serif;
   font-size: 1.8rem;
@@ -633,8 +691,7 @@ a:hover {
 
 .contact-links {
   display: flex;
-  flex-direction: column;
-  gap: 0;
+  gap: 12px;
 }
 
 .contact-links a {
